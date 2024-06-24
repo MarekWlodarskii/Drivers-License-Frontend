@@ -1,0 +1,99 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.contentContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mediaContainer {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionAndButtonsContainer {
+    width: 100%;
+}
+
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.buttonContainer button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    flex: 1 0 auto;
+    margin-bottom: 10px;
+}
+
+.buttonContainer button:hover {
+    background-color: #005f6b;
+}
+
+.buttonContainer button.correct {
+    background-color: #28a745;
+}
+
+.buttonContainer button.incorrect {
+    background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+    .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttonContainer button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mediaContainer {
+        overflow: hidden;
+    }
+
+    .mediaContainer video,
+    .mediaContainer img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}

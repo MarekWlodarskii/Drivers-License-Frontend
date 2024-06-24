@@ -1,0 +1,111 @@
+.examContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    position: relative;
+}
+
+.leftMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    max-width: 10%;
+    padding-top: 11rem;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menuButton {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menuButton:hover {
+    background-color: #0056b3;
+}
+
+.questionContainer {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.navigationButtons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.navButton {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+    background-color: #0056b3;
+}
+
+.questionIndexButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.indexButton {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    width: 40px;
+    height: 40px;
+}
+
+.indexButton:hover {
+    background-color: #bbb;
+}

@@ -1,0 +1,37 @@
+.finishedExamContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.scoreDisplay {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.buttonFinishedContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.finishedButton {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.finishedButton:hover {
+    background-color: #0056b3;
+}
